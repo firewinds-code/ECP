@@ -15,6 +15,15 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('phone');
+            $table->string('usertype');
+            $table->string('designation');
+            $table->string('booth');
+            $table->string('mandal_name');
+            $table->string('vidhan');
+            $table->string('zila');
+            $table->string('sambhag');
+            $table->string('pradesh');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
